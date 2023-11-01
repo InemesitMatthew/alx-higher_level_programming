@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-number, f1 = 3.14159, "Float: "
-print(f"{f1}{number:.2f}")
+if __name__ == "__main__":
+    number = 3.14159  # Replace this with the desired float value
+    print(f"Float: {number:.2f}")
