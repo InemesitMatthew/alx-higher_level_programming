@@ -1,17 +1,3 @@
-#!/usr/bin/python3
-import sys
-import py_compile
-
-if len(sys.argv) != 2:
-    sys.stderr.write("Usage: {} <PYFILE>\n".format(sys.argv[0]))
-    sys.exit(1)
-
-pyfile = sys.argv[1]
-pycfile = pyfile + "c"
-
-try:
-    py_compile.compile(pyfile, cfile=pycfile)
-    print("Compiling {} ...".format(pyfile))
-except Exception as e:
-    sys.stderr.write("Compilation failed: {}\n".format(e))
-    sys.exit(1)
+#!/bin/bash
+PYFILE="$PYFILE"
+py_compile "$PYFILE"
