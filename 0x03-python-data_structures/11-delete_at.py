@@ -7,8 +7,11 @@ def delete_at(my_list=None, idx=0):
     if idx < 0 or idx >= len(my_list):
         return my_list
 
-    my_list[:] = [my_list[i] for i in range(len(my_list)) if i != idx]  # Update the original list
+    my_list[:] = [
+        my_list[i] for i in range(len(my_list)) if i != idx
+    ]  # Update the original list
     return my_list  # Return the modified list
+
 
 # Example usage
 if __name__ == "__main__":
