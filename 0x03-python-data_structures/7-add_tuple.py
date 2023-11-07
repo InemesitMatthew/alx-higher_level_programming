@@ -2,7 +2,7 @@
 
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    # Handle tuple size by unpacking with default values
+    # Unpack the input tuples without modifying the default values
     a_1, a_2 = tuple_a if len(tuple_a) >= 2 else (0, 0)
     b_1, b_2 = tuple_b if len(tuple_b) >= 2 else (0, 0)
 
@@ -21,5 +21,5 @@ if __name__ == "__main__":
     new_tuple = add_tuple(tuple_a, tuple_b)
     print(new_tuple)
 
-    print(add_tuple(tuple_a, (1, )))
+    print(add_tuple(tuple_a, (1,)))
     print(add_tuple(tuple_a, ()))
