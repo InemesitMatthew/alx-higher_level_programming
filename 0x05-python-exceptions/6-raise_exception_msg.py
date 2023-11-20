@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+
 def raise_exception_msg(message=""):
     raise NameError(message)
+
 
 # Test the function with the provided example
 if __name__ == "__main__":
