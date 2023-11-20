@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def safe_print_list_integers(my_list=[], x=0):
     num_printed = 0
 
@@ -13,6 +14,7 @@ def safe_print_list_integers(my_list=[], x=0):
 
     print()  # Add a new line after printing integers
     return num_printed
+
 
 # Test the function with the provided examples
 if __name__ == "__main__":
