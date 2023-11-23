@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Square:
     """A class to represent a square and perform comparisons based on area."""
 
