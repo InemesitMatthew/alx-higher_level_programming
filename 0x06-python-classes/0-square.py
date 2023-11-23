@@ -3,11 +3,14 @@
 0-square.py - Defines an empty Square class
 """
 
+
 class Square:
     """
     The Square class represents a square.
     """
+
     pass
+
 
 if __name__ == "__main__":
     my_square = Square()
