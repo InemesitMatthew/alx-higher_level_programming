@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-class Square:
-    """Empty Square class."""
+"""
+0-square.py - Defines an empty Square class
+"""
 
+class Square:
+    """
+    The Square class represents a square.
+    """
     pass
 
 if __name__ == "__main__":
