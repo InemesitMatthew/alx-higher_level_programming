@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+"""
+Module Name: 0-add_integer
+Description: This module provides a function for adding two integers.
+"""
 
 
 def add_integer(a, b=98):
     """
-    Adds two integers.
+    Add two integers.
 
-    :param a: The first integer or float.
-    :param b: The second integer or float (default is 98).
-    :return: The addition of a and b as an integer.
+    :param a: The first integer.
+    :param b: The second integer (default is 98).
+    :return: The sum of a and b.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
