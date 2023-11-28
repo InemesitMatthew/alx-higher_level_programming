@@ -1,0 +1,13 @@
+# ./tests/101-lazy_matrix_mul.txt
+"""
+>>> from 101-lazy_matrix_mul import lazy_matrix_mul
+
+# Test case 1: Matrix multiplication (2x2) x (2x2)
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+[[7, 10], [15, 22]]
+
+# Test case 2: Matrix multiplication (1x2) x (2x2)
+>>> lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+[[13, 16]]
+"""
+# Additional tests can be added to cover more scenarios
