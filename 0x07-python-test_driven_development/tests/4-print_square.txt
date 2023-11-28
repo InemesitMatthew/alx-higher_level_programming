@@ -1,0 +1,39 @@
+# ./tests/4-print_square.txt
+"""
+>>> from 4-print_square import print_square
+
+# Test case 1: Square of size 4
+>>> print_square(4)
+####
+####
+####
+####
+
+# Test case 2: Square of size 10
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Test case 3: Empty square (size 0)
+>>> print_square(0)
+
+# Test case 4: Square of size 1
+>>> print_square(1)
+#
+
+# Test case 5: Incorrect input (negative size)
+>>> try:
+...     print_square(-1)
+... except Exception as e:
+...     print(e)
+size must be >= 0
+"""
+# Additional tests can be added to cover more scenarios
