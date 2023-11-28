@@ -1,9 +1,5 @@
 ## 0x07. Python - Test-driven development
 
-Certainly! Here's a detailed, brief, and straightforward README for tasks 0 to 8. I've provided explanations for the main code, focusing on each task. Note that this README assumes a basic understanding of Python programming concepts.
-
----
-
 ## Task 0: Integers addition
 
 ### Code (`0-add.py`):
