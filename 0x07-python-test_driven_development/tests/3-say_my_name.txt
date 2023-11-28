@@ -1,0 +1,24 @@
+# ./tests/3-say_my_name.txt
+"""
+>>> from 3-say_my_name import say_my_name
+
+# Test case 1: First and last name provided
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Test case 2: Only first name provided
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+# Test case 3: Only first name provided (last name is optional)
+>>> say_my_name("Bob")
+My name is Bob
+
+# Test case 4: Incorrect input (numeric first name)
+>>> try:
+...     say_my_name(12, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+"""
+# Additional tests can be added to cover more scenarios
