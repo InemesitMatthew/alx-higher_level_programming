@@ -1,0 +1,32 @@
+guillaume@ubuntu:~/0x0A$ cat tests/7-base_geometry.txt
+#!/usr/bin/python3
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+bg = BaseGeometry()
+
+# Testing the integer_validator method
+try:
+    bg.integer_validator("my_int", 12)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))  # No output, validation successful
+
+try:
+    bg.integer_validator("width", 89)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))  # No output, validation successful
+
+# Testing the integer_validator method with errors
+try:
+    bg.integer_validator("name", "John")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))  # Output: [TypeError] name must be an integer
+
+try:
+    bg.integer_validator("age", 0)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))  # Output: [ValueError] age must be greater than 0
+
+try:
+    bg.integer_validator("distance", -4)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))  # Output: [ValueError] distance must be greater than 0

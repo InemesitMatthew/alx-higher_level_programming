@@ -1,0 +1,22 @@
+guillaume@ubuntu:~/0x0A$ cat tests/1-my_list.txt
+#!/usr/bin/python3
+MyList = __import__('1-my_list').MyList
+
+my_list = MyList()
+print(my_list)
+
+# Testing the append method
+my_list.append(1)
+print(my_list)  # Output: [1]
+my_list.append(4)
+print(my_list)  # Output: [1, 4]
+my_list.append(2)
+print(my_list)  # Output: [1, 4, 2]
+my_list.append(3)
+print(my_list)  # Output: [1, 4, 2, 3]
+my_list.append(5)
+print(my_list)  # Output: [1, 4, 2, 3, 5]
+
+# Testing the print_sorted method
+my_list.print_sorted()  # Output: [1, 2, 3, 4, 5]
+print(my_list)  # Output: [1, 4, 2, 3, 5]
