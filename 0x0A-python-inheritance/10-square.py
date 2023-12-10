@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module for Square class, inheriting from Rectangle."""
 
 
 class Square(Rectangle):

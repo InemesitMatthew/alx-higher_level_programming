@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module for MyInt class, inheriting from int with inverted == and != operators."""
 
 
 class MyInt(int):

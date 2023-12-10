@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module for enhanced Rectangle class with area method."""
 
 
 class Rectangle(BaseGeometry):

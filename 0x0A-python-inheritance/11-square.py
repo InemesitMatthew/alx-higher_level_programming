@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module for enhanced Square class with customized string representation."""
 
 
 class Square(Rectangle):
