@@ -24,12 +24,20 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Save a list of instances to a file in JSON format."""
-        if list_objs is None:
-            list_objs = []
-        json_data = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
-        file_name = f"{cls.__name__}.json"
-        with open(file_name, "w") as file:
-            file.write(json_data)
+        filename = f"{cls.__name__}.json"
+        json_list = []
+        if list_objs is not None:
+            json_list = [obj.to_dictionary() for obj in list_objs]
+        with open(filename, 'w') as file:
+            file.write(cls.to_json_string(json_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Convert a JSON string to a list of dictionaries."""
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
