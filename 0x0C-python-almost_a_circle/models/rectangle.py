@@ -97,6 +97,18 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            new_instance = cls(1, 1)  # Create a dummy instance
+        elif cls.__name__ == "Square":
+            new_instance = cls(1)  # Create a dummy instance
+        else:
+            return None
+
+        new_instance.update(**dictionary)
+        return new_instance
+
     def to_dictionary(self):
         """Return the dictionary representation of the Rectangle."""
         return {
